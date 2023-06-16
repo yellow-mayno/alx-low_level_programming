@@ -6,8 +6,14 @@
  * Description : I hAAAAAAAAAAAATTTEE betty
  * Return: back in time
  */
+
+/**
+ * main - dsfjshd f k jhdsq f kjhsd k f jhsdkjfs
+ *
+ * Return: sdlkjhfsdkjfhksjdhfksjdhfksjhfksj
+ */
 int main(void)
 {
-  printf("with proper grammar, but the outcome is a piece of art,\n");
-  return (0);
+	printf("with proper grammar, but the outcome is a piece of art,\n");
+	return (0);
 }

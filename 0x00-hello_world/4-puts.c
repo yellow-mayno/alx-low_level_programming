@@ -1,7 +1,18 @@
 #include <stdio.h>
 /*
- *desciption : prints stuff
- *library : stdio
+ * main - do stuff
+ *
+ * Desciption: prints stuff
+ * Library: stdio
+ * Return: 0
+ */
+
+
+/**
+ * main - df sdkfjhdskjfshd lkjsdj hjhn
+ *
+ * Return:  I will ditch
+ * this writing style as soooooooon as possible
  */
 
 int main(void)

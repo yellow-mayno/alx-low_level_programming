@@ -1,0 +1,8 @@
+C Compiling process
+
+Coponents of compiler are { preprocessor:first step to compile } then { source code move to compiler:obtaining assembly code } then  { we run the result throught an assemble:we obtain object code} then finaly { the linker:use the object code + libraries to have machine code}
+
+Preprocessor removes comments and include the header in the program. Also, all the macros are replaced with their code.
+Compiler will take the result from preprocessor and return assembly code ( mov add push .... ).
+Assembler takes assembly code and give binary code (object code).
+Linker links our code ( multiple object codes )  with libraries to obtain a single exe file.

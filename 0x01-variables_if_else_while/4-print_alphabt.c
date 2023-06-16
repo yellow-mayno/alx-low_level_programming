@@ -14,5 +14,6 @@ int main(void)
 		if (a != 0x65 && a != 0x71)
 			putchar(a);
 	}
+	putchar(10);
 	return (0);
 }

@@ -15,9 +15,9 @@ int main(void)
 		ch = (char)a;
 		putchar(ch);
 	}
-	for (a = "A" ; a <= "Z" ; a++)
+	for (a = 65 ; a <= 90 ; a++)
 	{
-		putchar(a);
+		putchar((char)a);
 	}
 	putchar('\n');
 	return (0);

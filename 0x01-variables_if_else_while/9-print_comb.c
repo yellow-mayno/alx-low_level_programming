@@ -14,14 +14,8 @@ int main(void)
 	{
 		putchar(i);
 		if (i == 0x39)
-		{
-			j = 0x24;
-		}
-		else
-		{
-			j = 0x2C;
-		}
-		putchar(j);
+			break;
+		putchar(0x2c);
 		putchar(0x20);
 	}
 	putchar(0xA);

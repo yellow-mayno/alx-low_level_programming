@@ -4,7 +4,7 @@
  *
  * Return: 0 dsfsdfsfds
  */
-void main(void)
+int main(void)
 {
 	int i;
 	int j;
@@ -28,7 +28,7 @@ void main(void)
 					if (i == 9 && j == 8 && l == 9)
 					{
 						putchar(10);
-						break;
+						return (0);
 					}
 					putchar(44);
 					putchar(32);

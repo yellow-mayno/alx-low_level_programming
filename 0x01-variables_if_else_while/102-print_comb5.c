@@ -28,7 +28,7 @@ int main(void)
 					if (i == 9 && j == 8 && l == 9)
 					{
 						putchar(10);
-						return (0);
+						break;
 					}
 					putchar(44);
 					putchar(32);
@@ -37,4 +37,5 @@ int main(void)
 			}
 		}
 	}
+	return (0);
 }

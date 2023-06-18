@@ -25,10 +25,10 @@ int main(void)
 					putchar(32);
 					putchar(k + 48);
 					putchar(l + 48);
-					if (i == 9 && j == 8 && l == 9)
+					if (i == 9 && j >= 8 && l == 9)
 					{
 						putchar(10);
-						break;
+						goto ret;
 					}
 					putchar(44);
 					putchar(32);
@@ -37,5 +37,6 @@ int main(void)
 			}
 		}
 	}
+ret:
 	return (0);
 }

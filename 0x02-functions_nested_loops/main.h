@@ -1,19 +1,17 @@
 #include <stdio.h>
 /**
- * main - sdfsdf
+ * print_alphabet - qsdsd
  *
- * Return: 0sdfsdfsdf
+ * Return: 0fddsf
  */
-int main(void)
+void print_alphabet(void)
 {
-	putchar(95);
-	putchar(112);
-	putchar(117);
-	putchar(116);
-	putchar(99);
-	putchar(104);
-	putchar(97);
-	putchar(114);
+	int i;
+
+	for (i = 97; i < 123; i++)
+	{
+		putchar(i);
+	}
 	putchar(10);
-	return (0);
+	return;
 }

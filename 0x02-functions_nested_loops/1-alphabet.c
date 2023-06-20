@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - qsdsd
+ * print_alphabet - qsdsd
  *
  * Return: 0fddsf
  */

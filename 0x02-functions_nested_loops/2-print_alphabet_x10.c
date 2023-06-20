@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 /**
  * main - dsfsdfsd
  *
@@ -13,8 +13,8 @@ void print_alphabetx10(void)
 	{
 		for (i = 97; i < 123; i++)
 		{
-			_putchar(i);
-			_putchar(10);
+			putchar(i);
+			putchar(10);
 		}
 	}
 }			

@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - dsfsdfsd
+ * print_alphabet_x10 - dsfsdfsd
  *
  * Return: 0fddsfd
  */

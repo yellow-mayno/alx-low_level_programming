@@ -12,21 +12,6 @@ int _putchar(char c)
 	return (write(1, &c, 1));
 }
 
-/**
- * print_alphabet - qsdsd
- *
- * Return: 0fddsf
- */
-void print_alphabet1(void)
-{
-	int i;
-
-	for (i = 97; i < 123; i++)
-	{
-		_putchar(i);
-	}
-	_putchar(10);
-}
 
 #include <stdio.h>
 /**

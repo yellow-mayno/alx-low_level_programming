@@ -1,4 +1,4 @@
-#include "1-alphabet.c"
+#include "main.h"
 int main(void)
 {
 	print_alphabet();

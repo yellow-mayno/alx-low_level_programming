@@ -26,8 +26,7 @@ void jack_bauer(void)
 			}
 
 			if (i == 2 && j == 3 && l == 5 && m == 9)
-				goto boom;
+				return;
 		}
 	}
-boom:
 }

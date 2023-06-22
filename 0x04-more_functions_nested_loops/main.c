@@ -1,11 +1,18 @@
-#include <stdio.h> 
 #include "main.h"
+#include <stdio.h>
+
 /**
-* main - testing field
-* Return: noreturn
-*/
-void main(void)
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
 {
-	int r1 = _isdigit('9');
-	printf("%d\n", r1);
+    char c;
+
+    c = '0';
+    printf("%c: %d\n", c, _isdigit(c));
+    c = 'a';
+    printf("%c: %d\n", c, _isdigit(c));
+    return (0);
 }

@@ -8,3 +8,5 @@ void print_line(int n);
 void print_diagonal(int n);
 void print_square(int tikitaka);
 int _isupper(int g);
+void print_triangle(int hehehe);
+

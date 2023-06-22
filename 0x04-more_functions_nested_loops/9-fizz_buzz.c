@@ -3,7 +3,7 @@
 * main - kjdshfkjshdfkjds
 * Return: no return
 */
-void main(void)
+int main(void)
 {
 	int i;
 
@@ -20,4 +20,5 @@ void main(void)
 	}
 	printf("Buzz");
 	putchar(10);
+	return (0);
 }

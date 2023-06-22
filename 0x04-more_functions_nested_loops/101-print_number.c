@@ -7,14 +7,14 @@
 void print_number(int n)
 {
 	int i, j;
-	
+
 	/* if n is 0 */
 	if (n == 0)
 	{
 		_putchar('0');
 		return;
 	}
-	
+
 	/* if n is negative */
 	if (n < 0)
 	{

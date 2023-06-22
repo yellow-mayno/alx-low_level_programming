@@ -8,6 +8,11 @@ void print_diagonal(int mok)
 {
 	int i, j;
 
+	if (mok <= 0)
+	{
+		_putchar(10);
+		return;
+	}
 	for (i = 0; i < mok; i++)
 	{
 		for (j = 0; j < i; j++)

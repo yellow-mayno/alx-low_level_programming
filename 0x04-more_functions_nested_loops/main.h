@@ -9,4 +9,5 @@ void print_diagonal(int n);
 void print_square(int tikitaka);
 int _isupper(int g);
 void print_triangle(int hehehe);
-
+void print_number(int fds);
+int power(int a, int b);

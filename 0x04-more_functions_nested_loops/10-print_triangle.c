@@ -17,7 +17,7 @@ void print_triangle(int mok)
 	{
 		for (j = 0; j < mok; j++)
 		{
-			if (j >= (mok - i))
+			if (j >= (mok - i - 1))
 				_putchar('#');
 			else
 				_putchar(' ');

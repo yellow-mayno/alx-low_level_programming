@@ -11,13 +11,14 @@ int main(void)
 	n = 48;
 	ap = 2;
 	app = 1;
-	printf("%ld\n", app);
-	printf("%ld\n", ap);
+	printf("%ld", app);
+	printf(", %ld", ap);
 	for (i = 0; i < n; i++)
 	{
-		printf("%ld\n", ap + app);
+		printf(", %ld", ap + app);
 		ap = ap + app;
 		app = ap - app;
 	}
+	putchar(10);
 	return (0);
 }

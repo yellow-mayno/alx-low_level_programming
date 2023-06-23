@@ -12,7 +12,6 @@ int main(void)
 	ap = 2;
 	app = 1;
 	S = 2;
-	
 	for (i = 0; i < n; i++)
 	{
 		if ((ap + app) % 2 == 0)

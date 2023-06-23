@@ -8,7 +8,7 @@ int main(void)
 	int n, i;
 	long ap, app;
 
-	n = 50;
+	n = 48;
 	ap = 2;
 	app = 1;
 	printf("%ld\n", app);

@@ -11,5 +11,5 @@ void _puts(char *str)
 	char lnfd[] = {'\n'};
 
 	write(1, str, len);
-	write(1, '\n', 1);
+	write(1, lnfd, 1);
 }

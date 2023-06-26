@@ -8,7 +8,8 @@
 void _puts(char *str)
 {
 	int len = strlen(str);
-	char lnfd[] = {'\n'}
+	char lnfd[] = {'\n'};
+
 	write(1, str, len);
 	write(1, '\n', 1);
 }

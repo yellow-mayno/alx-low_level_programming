@@ -1,6 +1,5 @@
 #include <unistd.h>
 #include <string.h>
-#include "main.h"
 /**
 * print_rev - sdfsdfsdf
 * @s: fdsfsdf
@@ -9,8 +8,11 @@
 void print_rev(char *s)
 {
 	int l = strlen(s), i;
+	char inrev[l];
+	char lnfd[] = {'\n'};
 
 	for (i = 0; i < l; i++)
-		_putchar(s[l - 1 - i]);
-	_putchar('\n');
+		inrev[i] = s[l - 1 - i];
+	write(1, inrev, l);
+	write(1, lnfd, 1);
 }

@@ -1,8 +1,8 @@
 /**
 * reverse_array - sdfsdfs
-* @a: dsdfdsfsfds
-* @n: fdsfsdsfsdf
-* Return: sdf
+* @a: sdfsdf
+* @n: sdfsd
+* Return: sdfdsfs
 */
 void reverse_array(int *a, int n)
 {

@@ -1,9 +1,9 @@
 /**
-* string_toopper - dffgds
+* string_toupper - dffgds
 * @s: dsfsdf
 * Return: dfsdf
 */
-char *string_toopper(char *s)
+char *string_toupper(char *s)
 {
 	int i = 0;
 

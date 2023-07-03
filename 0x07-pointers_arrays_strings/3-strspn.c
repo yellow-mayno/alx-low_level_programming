@@ -1,5 +1,5 @@
 /**
-* int _strspn - sdfsfd
+* _strspn - sdfsfd
 * @s: sdfsdf
 * @accept: sdfsd
 * Return: sdfsdf

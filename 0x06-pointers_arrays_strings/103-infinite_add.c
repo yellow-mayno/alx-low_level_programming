@@ -50,7 +50,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		for (; i < l1; i++)
 		{
 			/* printf("%d, %c\n", i, n1[l1 - 1 - i]); */
-			sum = n1[l1 - 1 - i] + cumul -48;
+			sum = n1[l1 - 1 - i] + cumul - 48;
 			if (i == size_r)
 				return (0);
 			r[size_r - 1 - i] = sum % 10 + 48;

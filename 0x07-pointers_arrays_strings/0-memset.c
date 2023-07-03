@@ -3,6 +3,7 @@
 * @s: sdfsd
 * @b: sdfsdd
 * @n: sqdf
+* Return: dsfsdf
 */
 char *_memset(char *s, char b, unsigned int n)
 {

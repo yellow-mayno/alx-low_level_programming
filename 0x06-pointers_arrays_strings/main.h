@@ -10,3 +10,4 @@ char *leet(char *);
 char *rot13(char *);
 void print_number(int);
 int _putchar(char c);
+char *infinite_add(char *, char*, char*, int);

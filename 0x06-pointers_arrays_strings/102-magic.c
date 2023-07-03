@@ -1,8 +1,5 @@
 #include <stdio.h>
-/**
-* main - fdsfs
-* Return: sdfsd
-*/
+
 int main(void)
 {
 	int n;

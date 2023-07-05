@@ -6,3 +6,4 @@ int factorial(int);
 int _pow_recursion(int, int);
 int _sqrt_recursion(long);
 int is_prime_number(long);
+int is_palindrome(char *);

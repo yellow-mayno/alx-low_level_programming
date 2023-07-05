@@ -7,7 +7,7 @@
 int _sqrt_recursion(long n)
 {
 	if ((int)n < 0)
-		return (-1);
+		return (0);
 	else if (n == 1 || n == 0)
 		return (n);
 	if (n < 100000000)

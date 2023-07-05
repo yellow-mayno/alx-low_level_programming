@@ -11,7 +11,7 @@ void _print_rev_recursion(char *str)
 	char s[] = "                                                                ";
 	char *p;
 
-	if (*str != "")
+	if (strcmp(str, ""))
 	{
 		strcpy(s, str);
 		i = strlen(s);

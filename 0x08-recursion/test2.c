@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int _sqrt_recursion(int);
+int is_prime_number(int);
 
 /**
  * main - check the code for Holberton School students.
@@ -10,10 +10,8 @@ int _sqrt_recursion(int);
 int main(void)
 {
 	int r;
-	
-	puts("*********************");
-	r = _sqrt_recursion(-16);
-	puts("*********************");
+
+	r = is_prime_number(-7);
 	printf("%d\n", r);
 	return (0);
 }

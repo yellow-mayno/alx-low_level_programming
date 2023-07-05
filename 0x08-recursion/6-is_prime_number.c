@@ -6,9 +6,9 @@
 */
 int is_prime_number(long n)
 {
-	if (n < 0)
-		n = n * (-1);
-/*		printf("%ld\n", n);*/
+	if ((int)n < 0)
+		return (0);
+	/*	n = (int)n * (-1);*/
 	if (n == 0 || n == 1)
 		return (0);
 	if (n < 100000000)

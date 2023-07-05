@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
 * _print_rev_recursion - sqdfsdfs
 * @str: sdfsdf
@@ -10,11 +11,8 @@ void _print_rev_recursion(char *str)
 	char s[] = "                        ";
 	char *p;
 
-	while (str[i] != '\0')
-	{
-		s[i] = str[i];
-		i++;
-	}
+	strcpy(s, str);
+	i = strlen(s);
 	i--;
 	p = s + i;
 	if (p == s)

@@ -1,5 +1,5 @@
 /**
-* pow_recursion - sdfsdfs
+* _pow_recursion - sdfsdfs
 * @x: sdfsd
 * @y: sdfsd
 * Return: sdfsdf

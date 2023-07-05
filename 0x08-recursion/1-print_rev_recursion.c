@@ -13,6 +13,7 @@ void _print_rev_recursion(char *str)
 
 	if (strcmp(str, ""))
 	{
+/* create a copy for str or segmentation error will occur when mdyn it */
 		strcpy(s, str);
 		i = strlen(s);
 		i--;

@@ -8,21 +8,24 @@
 void _print_rev_recursion(char *str)
 {
 	int i = 0;
-	char s[] = "                        ";
+	char s[] = "                                                                ";
 	char *p;
 
-	strcpy(s, str);
-	i = strlen(s);
-	i--;
-	p = s + i;
-	if (p == s)
+	if (*str != "")
 	{
-		_putchar(*p);
-	}
-	else
-	{
-		_putchar(*p);
-		*p = '\0';
-		_print_rev_recursion(s);
+		strcpy(s, str);
+		i = strlen(s);
+		i--;
+		p = s + i;
+		if (p == s)
+		{
+			_putchar(*p);
+		}
+		else
+		{
+			_putchar(*p);
+			*p = '\0';
+			_print_rev_recursion(s);
+		}
 	}
 }

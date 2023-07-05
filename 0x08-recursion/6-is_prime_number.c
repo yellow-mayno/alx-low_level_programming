@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
 * is_prime_number - dfgdfgd
 * @n: dfgd
@@ -5,11 +6,9 @@
 */
 int is_prime_number(long n)
 {
-	if ((int)n < 0)
-	{
+	if (n < 0)
 		n = n * (-1);
-		printf("%ld\n", n);
-	}
+/*		printf("%ld\n", n);*/
 	if (n == 0 || n == 1)
 		return (0);
 	if (n < 100000000)

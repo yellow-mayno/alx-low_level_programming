@@ -1,5 +1,6 @@
 #include <string.h>
 #include <stdio.h>
+#include <stdlib.h>
 /**
 * is_palindrome - sdfsd
 * @s: dsqfsfds
@@ -8,7 +9,7 @@
 int is_palindrome(char *s)
 {
 	int i;
-	char cpy[] = "                                                      ";
+	char *cpy = malloc(strlen(s));
 	char *ptr = cpy;
 
 	strcpy(cpy, s);

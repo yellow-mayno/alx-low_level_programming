@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
 * _sqrt_recursion - sdfsf
 * @n: sdfsdf
@@ -5,11 +6,10 @@
 */
 int _sqrt_recursion(long n)
 {
-	if (n < 0)
+	if ((int)n < 0)
 		return (-1);
 	else if (n == 1 || n == 0)
 		return (n);
-
 	if (n < 100000000)
 		n = n * 100000000;
 	if ((n / 100000000) == (n % 100000000))

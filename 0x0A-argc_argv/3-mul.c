@@ -9,7 +9,7 @@
 int main(int argc, char *argv[])
 {
 	int i;
-	int isnumerical;
+	int isnum;
 	int mul;
 
 	if (argc != 3)
@@ -19,15 +19,15 @@ int main(int argc, char *argv[])
 	}
 	for (i = 1; i < 3; i++)
 	{
-		isnumerical = 0;
-		while (argv[i][isnumerical] != '\0')
+		isnum = 0;
+		while (argv[i][isnum] != '\0')
 		{
-			if (argv[i][isnumerical] > 57 || argv[i][isnumerical] < 48)
+			if ((argv[i][isnum] > 57 || argv[i][isnum] < 48) && argv[i][isnum] != '-')
 			{
 				puts("Error");
 				return (1);
 			}
-			isnumerical++;
+			isnum++;
 		}
 	}
 	mul = atoi(argv[1]) * atoi(argv[2]);

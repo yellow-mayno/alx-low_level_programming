@@ -8,7 +8,7 @@
 */
 int main(int argc, char *argv[])
 {
-	int i = atoi(argv[1]);
+	int i;
 	int sum;
 
 	if (argc != 2)
@@ -16,6 +16,7 @@ int main(int argc, char *argv[])
 		puts("Error");
 		return (1);
 	}
+	i = atoi(argv[1]);
 	if (i <= 0)
 	{
 		puts("0");

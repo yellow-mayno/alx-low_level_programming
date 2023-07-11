@@ -12,7 +12,11 @@ char *_strdup(char *str)
 	char *cpy;
 
 	if (str == NULL)
-		return (NULL);
+	{
+		cpy = malloc(sizeof(char));
+		cpy = NULL	
+		return (cpy);
+	}
 	if (*str != '\0')
 	{
 		while (str[i] != '\0')

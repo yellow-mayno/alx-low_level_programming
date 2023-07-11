@@ -13,9 +13,17 @@ char *str_concat(char *s1, char *s2)
 	char *cpy;
 
 	if (s1 == NULL)
-		s1[0] = 0;
+	{	
+		free(s1);
+		s1 = malloc(sizeof(char));
+		s1 = "";
+	}
 	else if (s2 == NULL)
-		s2[0] = 0;
+	{
+		free(s2);
+		s2 = malloc(sizeof(char));
+		s2 = "";
+	} 
 	/* puts("------1st waypoint------"); */
 	i = strlen(s1) + strlen(s2);
 	cpy = malloc((unsigned int) i);

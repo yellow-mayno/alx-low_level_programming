@@ -3,27 +3,30 @@
 #include <stdio.h>
 /**
 * str_concat - assasss
-* @s1: sdfsdfsd
-* @s2 : sdfsdf
+* @str1: sdfsdfsd
+* @str2 : sdfsdf
 * Return: dsfgds
 */
-char *str_concat(char *s1, char *s2)
+char *str_concat(char *str1, char *str2)
 {
 	int i;
 	char *cpy;
-
-	if (s1 == NULL)
-	{	
-		free(s1);
+	char *s1, *s2;
+	if (str1 == NULL)
+	{
 		s1 = malloc(sizeof(char));
 		s1 = "";
 	}
-	else if (s2 == NULL)
+	else if (str2 == NULL)
 	{
-		free(s2);
 		s2 = malloc(sizeof(char));
 		s2 = "";
-	} 
+	}
+	else
+	{
+		s1 = str1;
+		s2 = str2;
+	}
 	/* puts("------1st waypoint------"); */
 	i = strlen(s1) + strlen(s2);
 	cpy = malloc((unsigned int) i);

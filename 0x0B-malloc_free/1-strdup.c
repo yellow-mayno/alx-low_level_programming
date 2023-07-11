@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 /**
 * _strdup - sdfsdfsdf
 * @str: dfgdfg
@@ -10,6 +11,8 @@ char *_strdup(char *str)
 	int i = 0, y;
 	char *cpy;
 
+	if (!strcmp(str, "") || !strcmp(str, NULL))
+		return (NULL);
 	if (*str != '\0')
 	{
 		while (str[i] != '\0')

@@ -12,7 +12,8 @@ char *str_concat(char *str1, char *str2)
 	int i;
 	char *cpy;
 	char *s1, *s2;
-	char *empty = ""
+	char *empty = "";
+
 	if (str1 == NULL)
 		s1 = empty;
 	else

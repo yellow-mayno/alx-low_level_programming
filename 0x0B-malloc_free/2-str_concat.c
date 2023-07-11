@@ -16,7 +16,7 @@ char *str_concat(char *str1, char *str2)
 	if (str1 == NULL)
 		s1 = empty;
 	else
-		s2 = str2;
+		s1 = str1;
 	if (str2 == NULL)
 		s2 = empty;
 	else

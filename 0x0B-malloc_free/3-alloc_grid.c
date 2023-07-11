@@ -15,12 +15,18 @@ int **alloc_grid(int w, int h)
 		return (NULL);
 	matr = malloc(h * sizeof(int *));
 	if (matr == NULL)
+	{
+		free(matr);
 		return (NULL);
+	}
 	for (i = 0; i < h; i++)
 	{
 		matr[i] = malloc(w * sizeof(int));
 		if (matr[i] == NULL)
+		{
+			free(matr[i]);
 			return (NULL);
+		}
 	}
 	return (matr);
 }

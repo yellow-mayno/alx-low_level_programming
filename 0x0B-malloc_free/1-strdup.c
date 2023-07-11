@@ -29,6 +29,9 @@ char *_strdup(char *str)
 		}
 	}
 	else
-		return (NULL);
+	{
+		*cpy = *str;
+		return (cpy);
+	}
 	return (cpy);
 }

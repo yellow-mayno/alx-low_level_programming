@@ -11,7 +11,7 @@ char *_strdup(char *str)
 	int i = 0, y;
 	char *cpy;
 
-	if (!strcmp(str, "") || !strcmp(str, NULL))
+	if (str == NULL)
 		return (NULL);
 	if (*str != '\0')
 	{

@@ -13,6 +13,8 @@ char *argstostr(int ac, char **av)
 	int j, sptr = 0;
 	char *cat;
 
+	if (ac == 0 || av == NULL)
+		return (NULL);
 	cat = malloc(size * sizeof(int));
 	for (; i < ac; i++)
 	{
@@ -33,11 +35,15 @@ char *argstostr(int ac, char **av)
 			sptr++;
 			j++;
 		}
-		cat = realloc(cat, (size + 1) * sizeof(char));
+		cat = realloc(cat, (size + 10) * sizeof(char));
+		if (cat == NULL)
+		{
+			free(cat);
+			return (NULL);
+		}
 		cat[sptr] = '\n';
 		sptr++;
 	}
-	cat = realloc(cat, (size + 1) * sizeof(char));
 	cat[sptr] = '\0';
 	return (cat);
 }

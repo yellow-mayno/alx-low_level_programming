@@ -1,16 +1,22 @@
+#include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 
-
-char *argstostr(int, char **);
-int main(int argc, char **argv)
+/**
+ * main - check the code for ALX School students.
+ *
+ * Return: Always 0.
+ */
+int main(int ac, char *av[])
 {
-	char *a, *b, *c;
-	char *cat;
+    char *s;
 
-	a = "it's ";
-	b = "fkn ";
-	c = "over\n";
-	cat = argstostr(argc, argv);
-	printf("%s\n", cat);
-	return (0);
+    s = argstostr(ac, av);
+    if (s == NULL)
+    {
+        return (1);
+    }
+    printf("%s", s);
+    free(s);
+    return (0);
 }

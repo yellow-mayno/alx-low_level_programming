@@ -35,7 +35,7 @@ char *argstostr(int ac, char **av)
 		}
 		cat = realloc(cat, (size + 1) * sizeof(char));
 		cat[sptr] = '\n';
-		sptr++; 
+		sptr++;
 	}
 	cat = realloc(cat, (size + 1) * sizeof(char));
 	cat[sptr] = '\0';

@@ -5,7 +5,7 @@
 * @size: dsfgds
 * Return: sdff
 */
-void *_calloc(unsigned in nmeb, unsigned int size)
+void *_calloc(unsigned int nmeb, unsigned int size)
 {
 	void *matr;
 	int k = 0;
@@ -15,10 +15,7 @@ void *_calloc(unsigned in nmeb, unsigned int size)
 	matr = malloc(nmeb * size);
 	if (matr == NULL)
 	{
-		free(matr);
 		return (NULL);
 	}
-	for (; k < nmeb; k++)
-		matr[k] = 0;
 	return (matr);
 }

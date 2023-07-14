@@ -8,7 +8,6 @@
 void *_calloc(unsigned int nmeb, unsigned int size)
 {
 	void *matr;
-	int k = 0;
 
 	if (nmeb == 0 || size == 0)
 		return (NULL);

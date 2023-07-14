@@ -23,12 +23,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		str2 = empty;
 	else
 		str2 = s2;
-	cat = malloc(sizeof(char) * (_strlen(str1) + n + 1));
+	cat = malloc(sizeof(char) * (strlen(str1) + n + 1));
 	if (cat == NULL)
 		return (cat);
 	strcpy(cat, str1);
-	strncpy(&cat[_strlen(str1)], str2, n);
-	cat[_strlen(str1) + n] = '\0';
+	strncpy(&cat[strlen(str1)], str2, n);
+	cat[strlen(str1) + n] = '\0';
 	return (cat);
 }
 

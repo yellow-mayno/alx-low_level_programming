@@ -7,28 +7,18 @@
 */
 void *_calloc(unsigned in nmeb, unsigned int size)
 {
-	void **matr;
-	int i = 0, j = 0, k = 0;
+	void *matr;
+	int k = 0;
 
 	if (nmeb == 0 || size == 0)
 		return (NULL);
-	matr = malloc(nmeb * size(void *));
+	matr = malloc(nmeb * size);
 	if (matr == NULL)
 	{
 		free(matr);
 		return (NULL);
 	}
-	for (; i < nmeb; i++)
-	{
-		matr[i] = malloc(size);
-		if (matr[i] == NULL)
-		{
-			for (; j < (i + 1); j++)
-				free(matr[j]);
-			return (NULL);
-		}
-		for (; k < size; k++)
-			matr[i][j] = 0;
-	}
+	for (; k < nmeb; k++)
+		matr[k] = 0;
 	return (matr);
 }

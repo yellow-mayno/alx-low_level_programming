@@ -1,3 +1,4 @@
+#include <stddef.h>
 /**
 * array_iterator - sdfsdf
 * @array: sdfsdf
@@ -7,7 +8,7 @@
 */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	unsigned int i,
+	unsigned int i;
 
 	for (i = 0; i < size; i++)
 		action(array[i]);

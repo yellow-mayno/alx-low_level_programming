@@ -16,5 +16,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 		return (res);
 	for (i = 0; !cmp(array[i]) && i < size; i++)
 		;
+	if (i != size)
+		res =  i;
 	return (res);
 }

@@ -14,6 +14,10 @@ int (*get_op_func(char *s))(int, int)
 {"/", op_div}, {"%", op_mod}, {NULL, NULL}};
 
 	while (strcmp(array[i].op, s) && i < 6)
+	{
 		i++;
+		if (i == 5)
+			return (NULL);
+	}
 	return (array[i].f);
 }

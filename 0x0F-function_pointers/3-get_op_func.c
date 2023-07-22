@@ -17,10 +17,8 @@ int (*get_op_func(char *s))(int, int)
         {"/", op_div},
         {"%", op_mod},
         {NULL, NULL}
-	};
-	printf("something ffs\n"); 
+	}; 
 	while (strcmp(array[i].op, s) && i < 6)
 		i++;
-	printf("%d\n", i);
 	return (array[i].f);
 }

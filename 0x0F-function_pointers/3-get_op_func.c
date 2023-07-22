@@ -12,6 +12,7 @@ int (*get_op_func(char *s))(int, int)
 	int i = 0;
 	op_t array[6] = {{"+", op_add}, {"-", op_sub}, {"*", op_mul},
 {"/", op_div}, {"%", op_mod}, {NULL, NULL}};
+	
 	while (strcmp(array[i].op, s) && i < 6)
 		i++;
 	return (array[i].f);

@@ -1,5 +1,7 @@
 #include "3-calc.h"
 #include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
 /**
 * get_op_func - choose what function
 * @s: operator
@@ -8,28 +10,17 @@
 int (*get_op_func(char *s))(int, int)
 {
 	int i = 0;
-
-	op_t add;
-	add.op = "+";
-	add.f = op_add;
-	op_t sub;
-	sub.op = "-";
-	sub.f = op_sub;
-	op_t mul;
-	mul.op = "*";
-	mul.f = op_mul;
-	op_t mod;
-	mod.op = "%";
-	mod.f = op_mod;
-	op_t div;
-	div.op = "/";
-	div.f = op_div;
-
-	op_t array[5] = {add, sub, div, mod, mul};
-	while (array[i].op[0] != s[0] && i < 5)
+	op_t array[6] = {
+        {"+", op_add},
+        {"-", op_sub},
+        {"*", op_mul},
+        {"/", op_div},
+        {"%", op_mod},
+        {NULL, NULL}
+	};
+	printf("something ffs\n"); 
+	while (strcmp(array[i].op, s) && i < 6)
 		i++;
-	if (i == 5)
-		return (NULL);
-	else
-		return (array[i].f);
+	printf("%d\n", i);
+	return (array[i].f);
 }

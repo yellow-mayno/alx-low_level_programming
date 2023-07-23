@@ -12,6 +12,8 @@ void print_numbers(const char *seperator, const unsigned int n, ...)
 	unsigned int i;
 	va_list args;
 
+	if (n == 0)
+		putchar(10);
 	if (seperator == NULL)
 		seperator = "\0";
 	va_start(args, n);

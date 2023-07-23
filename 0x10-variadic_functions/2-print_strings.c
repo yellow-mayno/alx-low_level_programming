@@ -12,6 +12,7 @@ void print_strings(const char *seperator, const unsigned int n, ...)
 	unsigned int i;
 	va_list args;
 	char *to_print;
+
 	if (n == 0)
 		putchar(10);
 	if (seperator == NULL)
@@ -30,7 +31,7 @@ void print_strings(const char *seperator, const unsigned int n, ...)
 		{
 			putchar(10);
 			return;
-		}	
+		}
 	}
 	va_end(args);
 }

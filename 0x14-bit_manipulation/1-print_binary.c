@@ -4,11 +4,11 @@
 * @n: an unsigned int
 * Return: void
 */
-void print_binary(unsigned int n)
+void print_binary(unsigned long int n)
 {
 	int i, start = 0;
 
-	i = sizeof(unsigned int) * 8 - 1;
+	i = sizeof(unsigned long int) * 8 - 1;
 	if (n == 0)
 		_putchar('0');
 	else

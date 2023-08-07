@@ -14,7 +14,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 }
 
 /**
-* clar_bit - set bit at index to 0
+* clear_bit - set bit at index to 0
 * @n: the adress of the unsigned int
 * @index: the index
 * Return: 1 or -1 (depending on success)
